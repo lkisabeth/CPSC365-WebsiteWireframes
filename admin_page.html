@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Page Wireframe</title>
+</head>
+
+<body>
+
+--Navbar--
+
+<div>
+    <h1>Add a Movie</h1>
+
+    <p> errors here on form submission (1)</p>
+
+    <form action="util/add_movie.php" method="post" enctype="multipart/form-data">
+        <div>
+            <div>
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" placeholder="Citizen Kane" required> (2 (Whole Form))
+            </div>
+
+            <div>
+                <label for="release_date">Release Date</label>
+                <input type="date" name="release_date" id="release_date" required>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <label for="description">Description</label>
+                <input type="text" name="description" id="description" placeholder="Give a short synopsis of the film." required>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <label for="genre">Genre</label>
+                <div>
+                    <select name="genre" id="genre" required>
+                        <option>Action</option>
+                        <option>Adventure</option>
+                        <option>Comedy</option>
+                        <option>Crime</option>
+                        <option>Drama</option>
+                        <option>Documentary</option>
+                        <option>Fantasy</option>
+                        <option>Horror</option>
+                        <option>Musical</option>
+                        <option>Mystery</option>
+                        <option>Romance</option>
+                        <option>Romantic Comedy</option>
+                        <option>Sci-fi</option>
+                        <option>Thriller</option>
+                        <option>Western</option>
+                        <option>War</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <label for="poster">Poster</label>
+                <input type="file" name="poster" id="poster" required>
+            </div>
+        </div>
+
+        <div>
+            <input type="submit" name="movie" id="submit" value="Add Movie">
+        </div>
+    </form>
+
+</div>
+
+<p>--------</p>
+<p>Notes:</p>
+<p>1) On form submission, if there are any errors, the page will reload and any errors will be displayed here.</p>
+<p>2) This is the form for adding a new movie to the database. All fields are required. The Poster (image) files will be saved as a BLOB in the database and resizing will be handled by the view upon retrieval.</p>
+
+</body>
+</html>

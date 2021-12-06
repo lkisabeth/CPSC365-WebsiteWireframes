@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page Wireframe</title>
+</head>
+<body>
+
+--Navbar--
+
+<div>
+    <!-- Fixed sidebar -->
+    <!-- Friend Requests Requirement -->
+    <div>
+        <div id="friend_request">
+            <div>
+                <p>Friend Request (1)</p>
+            </div>
+            <div>
+                <p> Requester Username (1a)</p>
+                <button>Accept</button>
+                <button>Reject</button> (1b)
+            </div>
+        </div>
+        <!-- Friends' Activity Requirement -->
+        <div>
+            <div>
+                <p>Comment Text (2) </p>
+            </div>
+            <div class="">
+                <p> <a href="">Commenter Username</a>
+                    Comment Date
+                    <button>Add Friend</button> (2a)
+                </p>
+            </div>
+            <div>
+                <span>Likes: <span>0</span></span>
+                <button>Like</button> (2b)
+            </div>
+        </div>
+    </div>
+    <!-- Scroll wrapper -->
+    <div>
+        <div>
+            <h1>10 Most Recently Added Movies (3)</h1>
+        </div>
+
+        <div>
+            <div>
+                <a href="">
+                    <img src="">Movie Poster (3a)
+                </a>
+            </div>
+
+            <div>
+                <a href="">
+                    <h2>Movie Title (3b)</h2>
+                </a>
+                <div>
+                    Avg Rating (3c)
+                </div>
+            </div>
+
+            <div>
+                <div>Genre</div>
+                <div>Release Date</p></div>
+            </div>
+            <p>Description</p>
+
+        </div>
+    </div>
+</div>
+
+<p>--------</p>
+<p>Notes:</p>
+<p>1) Any pending friend requests for the currently logged in user will be displayed in this section (Left side of screen).</p>
+<p>1a) The requester's username will be retrieved from the database and displayed here.</p>
+<p>1b) These buttons are used to accept or reject the pending friend request. The request card will be removed from the view upon completion.</p>
+<p>2) The 10 most recent comments from the user's friends will be displayed here (left side of screen, below Friend Requests)</p>
+<p>2a) Information about the commenter will be retrieved from the database and displayed here. Also, the add friend button allows the currently logged in user to add the commenter as a friend.</p>
+<p>2b) The total number of likes for each comment will be displayed here and the user will be able to click the "Like" button to add or remove a like.</p>
+<p>3) The 10 most recently add movies will be displayed here (right side of screen)</p>
+<p>3a) The movie's poster will be displayed here. Users can click the poster to be taken to the movie's detail page.</p>
+<p>3b) The movie title will also be clickable and take users to the movie's detail page.</p>
+<p>3c) All movie attributes will be displayed in this section.</p>
+
+</body>
+</html>
